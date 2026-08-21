@@ -1,1 +1,30 @@
 # TODO: Stage 2 - content coming next month
+# keys & secrets
+*.pem
+*.key
+*.sig
+recovery-keys/
+
+# evidence & acquisition artifacts
+*.dd
+*.E01
+*.E01.*
+*.lime
+*.partial
+*.aborted
+*.aborted.DANGER
+ewf-calibration/
+
+# tool logs that may contain evidence paths (specific — NOT *.log)
+*.ewfverify.log
+*.dc3dd.log
+*.ewfacquire.log
+audit*.log
+
+# vm images
+*.qcow2
+
+# editor / OS junk
+.DS_Store
+*.swp
+*~

@@ -1,1 +1,19 @@
 # TODO: Stage 2 - content coming next month
+TODO: Choose a license before making this repository public.
+
+Current status: All rights reserved (personal project, design phase)
+
+Recommended options:
+- MIT          — permissive, good for portfolio/showcase
+- Apache-2.0   — permissive with patent clause
+- GPL-3.0      — copyleft, ensures derivatives stay open
+
+Decision criteria:
+- If this is purely for learning/portfolio → MIT
+- If you expect commercial use of derivatives → Apache-2.0
+- If you want to enforce openness in derivatives → GPL-3.0
+
+Note: This is a design document repository (no production code yet).
+      License choice matters more when actual code is populated in Stage 2.
+
+See: https://choosealicense.com/ for comparison
