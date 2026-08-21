@@ -1,1 +1,14 @@
 # TODO: Stage 2 - content coming next month
+[Unit]
+Description=PHOENIX EVIDENCE partition (overflow storage)
+After=systemd-cryptsetup@phoenix\x2devid.service
+Requires=systemd-cryptsetup@phoenix\x2devid.service
+
+[Mount]
+What=/dev/mapper/phoenix-evid
+Where=/phoenix/evidence
+Type=btrfs
+Options=defaults,compress=zstd:3,noatime
+
+[Install]
+WantedBy=multi-user.target

@@ -1,1 +1,4 @@
 # TODO: Stage 2 - content coming next month
+🔴 PHOENIX [EVIDENCE] 🔴
+CHAIN OF CUSTODY ACTIVE — target devices READ-ONLY
+Software write-block: 4 layers engaged | Continuous guard: 5s

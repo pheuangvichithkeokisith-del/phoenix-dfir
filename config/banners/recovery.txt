@@ -1,1 +1,5 @@
 # TODO: Stage 2 - content coming next month
+🔴 PHOENIX [RECOVERY] 🔴
+⚠️  WARNING: SYSTEM MODIFICATION ENABLED
+This mode allows WRITE operations — do NOT use for forensic work
+10-second countdown before continuing...

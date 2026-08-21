@@ -1,1 +1,4 @@
 # TODO: Stage 2 - content coming next month
+🟡 PHOENIX [TRIAGE] 🟡
+⚠️  NON-PHYSICAL IMAGING ONLY — NOT forensic acquisition
+Used-block imaging (partclone/ntfsclone) — for rapid assessment only

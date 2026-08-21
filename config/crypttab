@@ -1,1 +1,16 @@
 # TODO: Stage 2 - content coming next month
+# PHOENIX crypttab — LUKS2 with FIDO2 only
+# Format: <name> <device> <keyfile> <options>
+
+# P3 BRAIN — config, keys, audit log
+phoenix-brain  LABEL=PHOENIX-BRAIN-PART  none  luks,fido2-device=auto,timeout=60
+
+# P4 VAULT — staging area, temporary evidence  
+phoenix-vault  LABEL=PHOENIX-VAULT-PART  none  luks,fido2-device=auto,timeout=60
+
+# P5 EVIDENCE — overflow storage
+phoenix-evid   LABEL=PHOENIX-EVID-PART   none  luks,fido2-device=auto,timeout=60
+
+# IMPORTANT: No --tpm2-device option
+# Portable media MUST NOT bind to specific hardware
+# Recovery keys stored offline (sealed envelope) as fallback

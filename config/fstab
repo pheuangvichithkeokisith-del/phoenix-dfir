@@ -1,1 +1,16 @@
 # TODO: Stage 2 - content coming next month
+# PHOENIX fstab — tmpfs only, no swap
+# Mounted partitions are handled by systemd mount units in config/systemd/
+
+# tmpfs with size caps to prevent RAM exhaustion
+tmpfs  /tmp       tmpfs  defaults,noatime,mode=1777,size=50%  0  0
+tmpfs  /var/tmp   tmpfs  defaults,noatime,mode=1777,size=25%  0  0
+
+# /run/phoenix — runtime state (guard pid, target-list, boot-disk)
+tmpfs  /run/phoenix  tmpfs  defaults,noatime,mode=0755,size=8M  0  0
+
+# /var/log/phoenix — audit logs (RAM-only, lost on shutdown — intentional)
+tmpfs  /var/log/phoenix  tmpfs  defaults,noatime,mode=0755,size=32M  0  0
+
+# No swap — prevents any accidental write to boot media
+# No persistent mounts here — handled by systemd units for BRAIN/VAULT/EVIDENCE

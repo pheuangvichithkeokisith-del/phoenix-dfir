@@ -1,1 +1,14 @@
 # TODO: Stage 2 - content coming next month
+[Unit]
+Description=PHOENIX BRAIN partition (config, keys, audit)
+After=systemd-cryptsetup@phoenix\x2dbrain.service
+Requires=systemd-cryptsetup@phoenix\x2dbrain.service
+
+[Mount]
+What=/dev/mapper/phoenix-brain
+Where=/brain
+Type=ext4
+Options=defaults,noatime
+
+[Install]
+WantedBy=multi-user.target

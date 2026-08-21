@@ -1,1 +1,38 @@
 # TODO: Stage 2 - content coming next month
+[Distribution]
+Distribution=debian
+Release=bookworm
+
+[Output]
+Format=directory
+ImageId=phoenix-field
+
+[Content]
+Packages=
+    linux-image-amd64
+    dracut
+    systemd-boot
+    dropbear-initramfs
+    openssh-server
+    dc3dd
+    gddrescue
+    libewf-tools
+    sleuthkit
+    partclone
+    ntfs-3g
+    avml
+    btrfs-progs
+    xfsprogs
+    e2fsprogs
+    smartmontools
+    hdparm
+    nvme-cli
+    jq
+    tmux
+    htop
+    rsync
+    curl
+    libfido2-tools
+    openssl
+    iwd
+    cryptsetup
