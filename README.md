@@ -122,10 +122,9 @@ phoenix-dfir/
 Designed and reviewed by 4 AI assistants (design phase):
 
 - **Qwen** — primary architect
-- **ChatGPT Terra** — architecture/boot-chain (retired after converge)
-- **Gemini Pro 3** — operational reality (retired after converge)
-- **Claude Sonnet 5** — TOCTOU/calibration logic + final structure review
-
+- **Gemini Pro 3** — storage architecture (USB→SSD pivot), handed off after scope complete
+- **ChatGPT Terra** — prototype scaffold, handed off after scope complete
+- **Claude Sonnet 5** — TOCTOU/calibration logic + final structure review (ongoing)
 See [`docs/review-log.md`](docs/review-log.md) for attribution details.
 
 ---
